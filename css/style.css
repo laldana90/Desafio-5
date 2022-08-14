@@ -28,20 +28,6 @@ body {
   text-shadow: 2px 2px #ee74e1;
 }
 
-/* .menu:hover {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    270deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-  color: black;
-  font-size: 35px;
-  border: white 2px solid;
-  border-radius: 30px;
-  box-shadow: 3px 3px gray;
-} */
 
 footer {
   background-color: black;
@@ -71,7 +57,8 @@ footer {
   grid-area: header;
 }
 
-.tituloPrincipal {
+
+.animate__animated {
   display: flex;
   font-family: "Monoton", cursive;
   font-size: 80px;
@@ -85,6 +72,7 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .gridHijoDirectores {
@@ -96,13 +84,6 @@ footer {
   grid-area: directores;
 }
 
-/* .gridHijoDirectores:hover {
-  border-radius: 60px;
-  box-shadow: 2px 2px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  font-size: 20px;
-} */
 
 .gridHijoActores {
   border: 3px black solid;
@@ -113,13 +94,6 @@ footer {
   grid-area: actores;
 }
 
-/* .gridHijoActores:hover {
-  border-radius: 60px;
-  box-shadow: 2px 2px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  font-size: 20px;
-} */
 
 .gridHijoGeneros {
   border: 3px black solid;
@@ -130,13 +104,6 @@ footer {
   grid-area: generos;
 }
 
-/* .gridHijoGeneros:hover {
-  border-radius: 60px;
-  box-shadow: 2px 2px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  font-size: 20px;
-} */
 
 .gridHijoAbout {
   border: 3px black solid;
@@ -147,13 +114,6 @@ footer {
   grid-area: about;
 }
 
-/* .gridHijoAbout:hover {
-  border-radius: 60px;
-  box-shadow: 2px 2px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  font-size: 20px;
-} */
 
 .gridHijoReferencia {
   border: 3px black solid;
@@ -164,13 +124,6 @@ footer {
   grid-area: referencia;
 }
 
-/* .gridHijoReferencia:hover {
-  border-radius: 60px;
-  box-shadow: 2px 2px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  font-size: 20px;
-} */
 
 .gridFooter {
   border: 3px black solid;
@@ -651,3 +604,88 @@ footer {
     font-size: 60%;
   }
 }
+
+/******************************************** ANIMACIONES ******************************************************/
+
+.animate__animated.animate__rubberBand {
+  --animate-duration: 5s;
+}
+
+.menu:hover {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    270deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: black;
+  font-size: 35px;
+  border: white 2px solid;
+  border-radius: 30px;
+  box-shadow: 3px 3px gray;
+  
+}
+
+.gridHijoDirectores:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px black;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  font-size: 20px;
+}
+
+.gridHijoActores:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px black;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  font-size: 20px;
+}
+
+.gridHijoGeneros:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px black;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  font-size: 20px;
+}
+
+.gridHijoAbout:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px black;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  font-size: 20px;
+}
+
+.gridHijoReferencia:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px black;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  font-size: 20px;
+}
+
+.gridPadreDYA section {
+  animation-name: slide-right;
+  animation-duration: 5s;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: 100px;
+  }
+
+  to {
+    margin-left: 200px;
+  }
+}
+
+
+
+
