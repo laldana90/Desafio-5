@@ -395,8 +395,6 @@ footer {
   border: 3px solid white;
   border-radius: 60px;
   box-shadow: 5px 5px black;
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
   width: 100%;
 }
 
@@ -412,22 +410,26 @@ footer {
   grid-area: siete;
   display: flex;
   flex-flow: wrap;
+  
 }
 
 .section7 p {
   font-size: 25px;
   text-align: center;
   align-items: center;
+  padding: 10px;
 }
 
 .section7 dt {
   text-align: left;
   align-items: flex-start;
+  padding: 10px;
 }
 
 .section7 dd {
   text-align: left;
   align-items: center;
+  
 }
 
 .section8 {
@@ -668,24 +670,45 @@ footer {
 }
 
 .gridPadreDYA section {
-  animation-name: slide-right;
-  animation-duration: 5s;
+  animation-name: fade-in;
+  animation-duration: 6s;
 }
 
-@keyframes slide-right {
+@keyframes fade-in {
   from {
-    margin-left: 0px;
-  }
+    opacity: 0;
 
-  50% {
-    margin-left: 100px;
   }
 
   to {
-    margin-left: 200px;
+    opacity: 1;
   }
 }
 
+.gridPadreMe section:hover {
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+}
+.section7:hover {
+ 
+  font-size: 30px;
+}
 
+.section8:hover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 700px;
+  align-items: center;
+}
 
-
+.section8 img:hover {
+  transform: rotate(0deg);
+  transform: scale(1.5);
+  box-shadow: 2px 2px black;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 250px;
+  transition: 1s;
+}
